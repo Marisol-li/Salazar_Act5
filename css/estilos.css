@@ -1,0 +1,111 @@
+/* Estilos generales */
+header {
+    background-color: #0c9760;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    padding: 10px 0px;
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #4dc47d;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    width: 80%;
+    border: 1px solid #088251;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #04966d;
+}
+
+/* Secciones de la página */
+.editor, .controls {
+    flex: 1;
+    margin: 10px;
+}
+
+/* Vista previa de la tarjeta */
+.card-preview {
+    border: 2px solid #072f1c;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    background-color: #fff;
+}
+
+.card-preview img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Texto y autor de la tarjeta */
+#card-text, #card-author {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+}
+
+#card-text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 45px;
+    color: #fff;
+}
+
+#card-author {
+    font-family: Arial, sans-serif;
+    bottom: 10px;
+    font-size: 24px;
+    color: #fff;
+}
+
+/* Controles */
+.controls label {
+    display: block;
+    margin-top: 10px;
+}
+
+.controls select, .controls input {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+/* Botón de generar tarjeta */
+#generate {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #17ac75;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#generate:hover {
+    background-color: #034e30;
+}
+
+/* Animaciones de texto */
+.animate-text {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
